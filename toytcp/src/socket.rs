@@ -25,6 +25,7 @@ pub struct Socket {
     pub sender: TransportSender,
 }
 
+#[derive(Debug, Clone, PartialEq)]
 pub enum TcpStatus {
     Listen,
     SynSent,
